@@ -97,9 +97,9 @@ module AWeber
       @entries[key] = resource
     end
 
-    def each
-      (1..@total_size).each { |n| yield get_entry(n) }
-    end
+    # def each
+    #   (1..@total_size).each { |n| yield get_entry(n) }
+    # end
 
     def inspect
       "#<AW::Collection(#{@klass.to_s}) size=\"#{size}\">"
